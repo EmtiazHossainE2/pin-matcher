@@ -15,9 +15,10 @@ function generateBtn() {
 }
 
 //calculator body 
+const calcInput = document.getElementById('typed-numbers');
+
 document.getElementById('key-pad').addEventListener('click', function (event) {
     const number = event.target.innerText;
-    const calcInput = document.getElementById('typed-numbers');
     if (isNaN(number)) {
         if (number == 'C') {
             calcInput.value = ''
@@ -50,3 +51,8 @@ document.getElementById('verify-btn').addEventListener('click', function () {
     }
 
 })
+
+// delete 
+function Delete() {
+    calcInput.value = calcInput.value.slice(0, -1)
+}
