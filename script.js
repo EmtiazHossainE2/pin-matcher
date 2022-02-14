@@ -23,9 +23,6 @@ document.getElementById('key-pad').addEventListener('click', function (event) {
         if (number == 'C') {
             calcInput.value = ''
         }
-        else if (number == '<') {
-            calcInput.value = '-'
-        }
     }
     else {
         const previousNumber = calcInput.value;
